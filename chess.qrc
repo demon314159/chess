@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Chess_plt80.svg</file>
+        <file>images/Chess_nlt80.svg</file>
+        <file>images/Chess_blt80.svg</file>
+        <file>images/Chess_rlt80.svg</file>
+        <file>images/Chess_klt80.svg</file>
+        <file>images/Chess_qlt80.svg</file>
+        <file>images/Chess_pdt80.svg</file>
+        <file>images/Chess_ndt80.svg</file>
+        <file>images/Chess_bdt80.svg</file>
+        <file>images/Chess_rdt80.svg</file>
+        <file>images/Chess_kdt80.svg</file>
+        <file>images/Chess_qdt80.svg</file>
+    </qresource>
+</RCC>
