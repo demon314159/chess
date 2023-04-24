@@ -1,6 +1,7 @@
 #include <QPainter>
 #include "board.h"
 #include "chess.h"
+#include <math.h>
 
 Board::Board(ChessSet *chess_set, bool tray, bool dark, int cols, int rows, int spacing, QWidget *parent)
     : parent_(parent)
@@ -114,8 +115,10 @@ QSize Board::sizeHint() const
 void Board::mousePressEvent(QMouseEvent *event)
 {
     QString s;
-    int hi_x = event->position().x() / spacing_;
-    int hi_y = rows_ - 1 - (event->position().y() / spacing_);
+    int cx = round(event->position().x());
+    int cy = round(event->position().y());
+    int hi_x = cx / spacing_;
+    int hi_y = rows_ - 1 - (cy / spacing_);
     Piece *sel_piece;
     if (tray_) {
         if (dark_) {
