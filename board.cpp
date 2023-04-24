@@ -114,8 +114,8 @@ QSize Board::sizeHint() const
 void Board::mousePressEvent(QMouseEvent *event)
 {
     QString s;
-    int hi_x = event->x() / spacing_;
-    int hi_y = rows_ - 1 - (event->y() / spacing_);
+    int hi_x = event->position().x() / spacing_;
+    int hi_y = rows_ - 1 - (event->position().y() / spacing_);
     Piece *sel_piece;
     if (tray_) {
         if (dark_) {
